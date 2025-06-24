@@ -366,5 +366,3 @@ A: FastAPI는 8000번, BentoML은 3000번 포트를 사용합니다. 필요시 �
 - 이메일: wodms5744@gmail.com
 
 ---
-
-**Made with ❤️ for Soccer Players & Coaches**
