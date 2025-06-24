@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 가상환경
+venv/
+.venv/
+ENV/
+env/
+
+# IDE 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 운영체제 관련
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 로그 파일
+*.log
+logs/
+
+# 임시 파일
+temp/
+tmp/
+*.tmp
+*.temp
+
+# 출력 파일 (용량이 클 수 있음)
+outputs/
+results/
+
+# 환경설정 파일 (민감한 정보)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Firebase 서비스 계정 키
+*-firebase-adminsdk-*.json
+serviceAccountKey.json
+*secretkey*.json
+
+# 테스트 관련
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 대용량 모델 파일 (필요에 따라 주석 해제)
+# models/*.pt
+# models/*.pth
+# models/*.onnx
+
+# 개발 중 생성되는 데이터
+data/test_videos/
+data/temp/
+
+# 테스트 영상 파일들 (용량이 큰 파일들)
+tests/

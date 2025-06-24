@@ -1,0 +1,66 @@
+service: "service:svc"  # service.py 파일의 svc 인스턴스를 실행
+# bentoml을 사용해 배포하고 싶을 때 사용하기 위해 만듦 (현재는 FastAPI만 사용)
+# (Optional)
+
+labels:
+  owner: "goaltaethon_team"
+  stage: "development"
+  project: "kick-analyzer-server"
+
+description: >
+  Soccer Kick Analysis AI Server
+  축구 킥 동작을 분석하여 성능 지표와 피드백을 제공하는 AI 서버
+
+# Python 환경 설정
+python:
+  requirements_txt: "./requirements.txt"
+  lock_packages: false
+
+# 포함할 파일들
+include:
+  - "src/"
+  - "models/"
+  - "service.py"
+  - "requirements.txt"
+
+# 제외할 파일들
+exclude:
+  - "tests/"
+  - "*.pyc"
+  - "__pycache__/"
+  - ".git/"
+  - ".gitignore"
+  - "*.log"
+  - "temp/"
+  - "output/"
+
+# Docker 설정
+docker:
+  distro: "debian"
+  python_version: "3.11"
+  cuda_version: null  # GPU 사용 시 설정
+  system_packages:
+    - "ffmpeg"  # 영상 처리용
+    - "libgl1-mesa-glx"  # OpenCV용
+    - "libglib2.0-0"  # OpenCV용
+    - "libsm6"
+    - "libxext6"
+    - "libxrender-dev"
+    - "libgomp1"
+  env:
+    - "PYTHONPATH=/home/bentoml/bento/src"
+  
+# 리소스 설정
+resources:
+  cpu: "2"
+  memory: "4Gi"
+
+# 모니터링 설정
+monitoring:
+  enabled: true
+  
+# 환경변수 (운영 시 설정)
+# env:
+#   - "FIREBASE_PROJECT_ID=your-project-id"
+#   - "FIREBASE_STORAGE_BUCKET=your-bucket.appspot.com"
+#   - "ENVIRONMENT=production"
