@@ -246,14 +246,5 @@ BALL_SELECTION_WEIGHT_PLAYER_POST_KICK = 15.0  # 선수의 중요도를 대폭 �
 
 FIREBASE_CREDENTIALS_PATH = os.getenv("FIREBASE_CREDENTIALS_PATH")
 
-# (선택) Web SDK용 설정 — Admin SDK에는 필요 없지만,
-# 프런트엔드나 REST API 호출에 쓸 경우
-FIREBASE_API_KEY = "AIzaSyDSC5wki3kQqLpKnUPCb6Cq_AH_UJOBpOE"
-FIREBASE_PROJECT_ID = "kicksense-19c1d"
-FIREBASE_AUTH_DOMAIN = "kicksense-19c1d.firebaseapp.com"
-FIREBASE_DATABASE_URL = "https://kicksense-19c1d.firebaseio.com"
-FIREBASE_STORAGE_BUCKET = "kicksense-19c1d.appspot.com"
-FIREBASE_MESSAGING_SENDER_ID = "875240089927"
-FIREBASE_APP_ID = "1:875240089927:web:e4f320c8c112e10f724462"
 
 LOGO_IMAGE_PATH = BASE_DIR / "assets" / "logo.png"
