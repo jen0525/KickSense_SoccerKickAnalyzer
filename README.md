@@ -2,6 +2,8 @@
 
 ## ⚽️ 축구 킥 동작을 AI로 분석하여 성능 지표와 개선 피드백을 제공하는 API 서버입니다.
 
+![Image](https://github.com/user-attachments/assets/8c49ba9c-3f5d-4efd-94ad-985d2b29f2f2)
+
 ## 주요 기능
 
 - **킥 분석**: YOLO와 MediaPipe 포즈 추정으로 킥 동작 분석
